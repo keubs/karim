@@ -1,65 +1,40 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import Header from '../components/header'
 import styles from '../styles/Home.module.css'
+// import headerStyles from '../styles/Header.modules.css';
+import { withRouter } from 'next/router'
 
-export default function Home() {
+
+function Home({router}) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>[K  A  R  I  M]  [S  A  L  E  H]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header styles={styles} currentPath={router.pathname} />
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.intro}>
+          <h1 className={styles.title}>
+            Karim
+          </h1>
+          <p>
+            Advocate for a shoeless world &ndash; I&apos;m an endless wonderer who derives joy from noticing the unseen.
+          </p>
+        </div>
+        <Image src='/images/karim.png' width="470px" height="601px" />
+        <div className={styles.get_in_touch}>
+          karimsaleh-design@gmail.com
+          <div className={styles.circle}>Get In Touch</div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
       </footer>
     </div>
   )
 }
+
+export default withRouter(Home);

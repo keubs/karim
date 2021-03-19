@@ -1,0 +1,21 @@
+.header {
+  width: 15rem;
+}
+
+.header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+
+.header a {
+  color: #F6F1F1;
+  text-transform: uppercase;
+}
+
+.selected {
+  text-decoration: underline;
+}
