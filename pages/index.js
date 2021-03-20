@@ -37,7 +37,7 @@ function Home({router}) {
             </div>
           </section>
         </FullpageSection>
-        <FullpageSection styles={{height: '100vh', backgroundColor: 'red'}}>
+        <FullpageSection styles={{height: '120vh', backgroundColor: 'red'}}>
         <section className={styles.section}>
           <div className={styles.container}>
             <h2>About Karim</h2>
@@ -58,7 +58,7 @@ function Home({router}) {
               </div>
             </div>
             <div className={styles.cardRight}>
-              <Image src='/images/image-design.png' width="662px" height="417px" />
+              <Image src='/images/image-values.png' width="662px" height="417px" />
               <div className={styles.cardCopy}>
                 <div className={styles.cardTitles}>
                   <h1 className={styles.cardTitle}>
@@ -77,6 +77,26 @@ function Home({router}) {
                     <li>Vulberabilty</li> 
                     <li>Support</li>
                   </ul>
+              </div>
+            </div>
+            <div className={styles.cardLeft}>
+              <Image src='/images/image-music.png' width="662px" height="417px" />
+              <div className={styles.cardCopy}>
+                <div className={styles.cardTitles}>
+                  <h1 className={styles.cardTitle}>
+                    Music
+                  </h1>
+                  <h3 className={styles.cardTitleSubText}>
+                    The 6th love<br/>language
+                  </h3>
+                </div>
+                <p>
+                  I start every morning by sending 1 song to someone I love. Having worked in music for 5 years,
+                  I’ve traveled the world and been shaped by musicians who truly inspire me. 
+                </p>
+                <p>
+                  I love hosting cozy shows and helping emerging musicians connect with wide eyed newcomers. 
+                </p>
               </div>
             </div>
           </div>

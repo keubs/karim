@@ -62,12 +62,14 @@
 .cardLeft {
   display: flex;
   justify-content: left;
+  margin: 3em 0;
 }
 
 .cardRight {
   display: flex;
   justify-content: left;
   flex-direction: row-reverse;
+  margin: 3em 0;
 }
 
 .cardCopy {
