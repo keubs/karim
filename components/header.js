@@ -9,6 +9,7 @@ const Header = ({styles, currentPath}) => {
       <ul>
         {paths.map(path => (
           <li
+            key={path.text}
             className={
               (currentPath === path.path)
               ? styles.selected

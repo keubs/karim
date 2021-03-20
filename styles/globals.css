@@ -2,13 +2,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'monument_extendedlight', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: #272626;
-
+    
+  background: #272626;
+  color: #F6F1F1;
   font-size: 16px;
   letter-spacing: 5px;
 }
+
+/* h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+} */
 
 a {
   color: inherit;
@@ -31,13 +36,36 @@ a {
   font-style: normal;
 }
 
-
-
-
 @font-face {
   font-family: 'monument_extendedultrabold';
   src: url('fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
        url('fonts/monumentextended-ultrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monument_extendedlight';
+  src: url('fonts/monumentextended-light-webfont.woff2') format('woff2'),
+       url('fonts/monumentextended-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: local('Neue Machina Black'), local('Neue-Machina-Black'),
+      url('fonts/NeueMachina-Black.woff2') format('woff2'),
+      url('fonts/NeueMachina-Black.woff') format('woff'),
+      url('fonts/NeueMachina-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue_machinalight';
+  src: url('fonts/neuemachina-light-webfont.woff2') format('woff2'),
+       url('fonts/neuemachina-light-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 

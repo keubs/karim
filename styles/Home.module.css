@@ -1,3 +1,8 @@
+/* Global */
+.section {
+  padding: 1em;
+}
+/* end global */
 /* Homepage Styles */
 .container {
   min-height: 100vh;
@@ -11,6 +16,7 @@
   color: #F6F1F1;
   text-transform: uppercase;
   display: flex;
+  justify-content: space-between;
   margin-top: 5em;
 }
 
@@ -24,7 +30,10 @@
 
 .get_in_touch {
   padding: 1em;
-  transform: rotate(50deg);
+  
+  background-image: url('/images/Email.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .circle {
@@ -39,6 +48,9 @@
   padding: 2em 0;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 1.7em;
+  margin-right: 0.8em;
+  transform: rotate(50deg);
 }
 
 .intro {
@@ -47,11 +59,71 @@
   margin-top: 7em;
 }
 
+.cardLeft {
+  display: flex;
+  justify-content: left;
+}
+
+.cardRight {
+  display: flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+}
+
+.cardCopy {
+  font-family: 'neue_machinalight';
+  width: 537px;
+}
+
+.cardCopy p {
+  line-height: 2em;
+}
+
+.cardTitles {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100px;
+}
+
+.cardTitle {
+  font-family: 'Neue Machina';
+  font-size: 4em;
+  -webkit-text-stroke: 2px white;
+  color: #272626;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cardTitleSubText {
+  font-family: 'neue_machinalight';
+  font-size: .75em;
+  padding: 2.1em 2em;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.cardTitleSubText::before {
+  content: '(';
+  position: absolute;
+  left: -5px;
+  font-size: 5em;
+  top: 0;
+}
+.cardTitleSubText::after {
+  content: ')';
+  position: absolute;
+  right: -5px;
+  font-size: 5em;
+  top: 0;
+}
+
 /* End Homepage Styles */
 
 /* Header Styles */
 .header {
-  width: 15rem;
+  width: 17rem;
 }
 
 .header ul {
@@ -60,16 +132,19 @@
   padding: 0;
   list-style-type: none;
   font-size: 2rem;
+  font-family: 'monument_extendedlight';
   justify-content: space-between;
 }
 
 .header a {
+  padding-bottom: 10px;
   color: #F6F1F1;
   text-transform: uppercase;
 }
 
 .selected {
   text-decoration: underline;
+  color: #F6F1F1;
 }
 
 /* End Header Styles */
