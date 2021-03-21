@@ -1,6 +1,7 @@
 /* Global */
 .section {
   padding: 1em;
+  height: 100vh;
 }
 /* end global */
 /* Homepage Styles */
@@ -55,19 +56,19 @@
 
 .intro {
   width: 537px;
-  font-size: 1.375rem;
+  font-size: 1.275rem;
   margin-top: 7em;
 }
 
 .cardLeft {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   margin: 3em 0;
 }
 
 .cardRight {
   display: flex;
-  justify-content: left;
+  justify-content: space-around;
   flex-direction: row-reverse;
   margin: 3em 0;
 }
@@ -79,6 +80,10 @@
 
 .cardCopy p {
   line-height: 2em;
+}
+
+.cardCopy li {
+  margin: .5em 0;
 }
 
 .cardTitles {
@@ -119,6 +124,26 @@
   right: -5px;
   font-size: 5em;
   top: 0;
+}
+
+.skills {
+  padding: 3em;
+}
+
+.skills h3 {
+  border-bottom: 1px solid;
+  color: rgb(142, 139, 139)
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 1em;
+}
+
+.skillsContainer div {
+  margin: 2em 0;
+  text-align: center;
 }
 
 /* End Homepage Styles */
