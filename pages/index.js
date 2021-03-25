@@ -83,7 +83,7 @@ function Home({router}) {
         </Slide>
         <Slide>
           <section>
-            <div>
+            <div className={styles.container}>
               <div className={styles.cardLeft}>
                 <Image src='/images/image-music.png' width="662px" height="417px" />
                 <div className={styles.cardCopy}>
