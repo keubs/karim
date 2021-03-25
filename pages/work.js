@@ -7,10 +7,16 @@ const Work = ({router}) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>[K  A  R  I  M]  [S  A  L  E  H]</title>
+        <title>[K  A  R  I  M ][ S  A  L  E  H]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header styles={styles} currentPath={router.pathname} />
+      <main className={styles.main}>
+        <section className={styles.section}>
+          <div className={styles.container}>
+            <Header styles={styles} currentPath={router.pathname} />
+          </div>
+        </section>
+      </main>
     </div>
   )
 };

@@ -154,6 +154,62 @@ function Home({router}) {
             </div>
           </section>
         </Slide>
+        <Slide>
+        <section className={styles.section}>
+          <div className={styles.container}>
+            <h2>Tools</h2>
+            <div className={styles.tools}>
+              <div className={styles.tool}>
+                <span>Figma</span>
+                <img src="/images/figma.png" alt="figma" />
+              </div>
+              <div className={styles.tool}>
+                <span>Miro</span>
+                <img src="/images/miro.png" alt="miro" />
+              </div>
+              <div className={styles.tool}>
+                <span>XD</span>
+                <img src="/images/xd.png" alt="XD" />
+              </div>
+              <div className={styles.tool}>
+                <span>After Effects</span>
+                <img src="/images/after-effects.png" alt="After Effects" />
+              </div>
+              <div className={styles.tool}>
+                <span>Whimsical</span>
+                <img src="/images/whimsical.png" alt="Whimsical" />
+              </div>
+              <div className={styles.tool}>
+                <span>Sketch</span>
+                <img src="/images/sketch.png" alt="sketch" />
+              </div>
+              <div className={styles.tool}>
+                <span>ClickUp</span>
+                <img src="/images/clickup.png" alt="ClickUp" />
+              </div>
+              <div className={styles.tool}>
+                <span>HTML</span>
+                <img src="/images/html.png" alt="HTML" />
+              </div>
+              <div className={styles.tool}>
+                <span>CSS</span>
+                <img src="/images/css.png" alt="css" />
+              </div>
+              <div className={styles.tool}>
+                <span>JavaScript</span>
+                <img src="/images/javascript.png" alt="javascript" />
+              </div>
+            </div>
+          </div>
+        </section>
+        </Slide>
+        <Slide>
+        <section className={styles.section}>
+          <div className={styles.container}>
+            <h2>Experience</h2>
+          </div>
+        </section>
+        </Slide>
       <footer className={styles.footer} />
     </FullPage>
   )

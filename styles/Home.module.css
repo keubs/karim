@@ -12,6 +12,22 @@
   margin: 0 auto;
 }
 
+.container h2 {
+  padding-bottom: 5px;
+  position: relative;
+  display: inline;
+}
+
+.container h2:before{
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  border-bottom: 3px solid white;
+}
+
 .main {
   position: relative;
   color: #F6F1F1;
@@ -63,14 +79,14 @@
 .cardLeft {
   display: flex;
   justify-content: space-around;
-  margin: 3em 0;
+  margin: 3em;
 }
 
 .cardRight {
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
-  margin: 3em 0;
+  margin: 3em;
 }
 
 .cardCopy {
@@ -109,6 +125,7 @@
   text-align: center;
   position: relative;
   display: inline-block;
+  letter-spacing: 1px;
 }
 
 .cardTitleSubText::before {
@@ -127,7 +144,7 @@
 }
 
 .skills {
-  padding: 3em;
+  padding: 3em 1em;
 }
 
 .skills h3 {
@@ -143,6 +160,28 @@
 
 .skillsContainer div {
   margin: 2em 0;
+  text-align: center;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  padding: 5em 3em 0 3em;
+}
+
+.tools span {
+  display: block;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.tools img {
+  max-height: 135px;
+  margin: 0 auto;
+}
+
+.tool {
+  margin-bottom: 2em;
   text-align: center;
 }
 
@@ -170,8 +209,18 @@
 }
 
 .selected {
-  text-decoration: underline;
-  color: #F6F1F1;
+  position: relative;
+}
+
+.selected:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid white;
 }
 
 /* End Header Styles */
