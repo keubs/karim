@@ -120,31 +120,32 @@
 
 .cardTitleSubText {
   font-family: 'neue_machinalight';
-  font-size: .75em;
-  padding: 2.1em 2em;
+  font-size: .95em;
+  padding: 1.1em 1.2em;
   text-align: center;
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
+  color: #CFCDCD;
 }
 
 .cardTitleSubText::before {
   content: '(';
   position: absolute;
   left: -5px;
-  font-size: 5em;
+  font-size: 3.3em;
   top: 0;
 }
 .cardTitleSubText::after {
   content: ')';
   position: absolute;
   right: -5px;
-  font-size: 5em;
+  font-size: 3.3em;
   top: 0;
 }
 
 .skills {
-  padding: 3em 1em;
+  padding: 3em;
 }
 
 .skills h3 {
@@ -185,6 +186,42 @@
   text-align: center;
 }
 
+.experiences {
+  padding: 3em;
+}
+
+.experience {
+  padding: 0em 3em;
+  border-bottom: 1px solid;
+}
+
+.experience h1 {
+  flex-grow: 1;
+  margin-left: 8em;
+}
+
+.experience h3 {
+  display: block;
+  color: #F6F1F1;
+  font-size: 16px;
+  flex-grow: 1;
+  height: 20px;
+}
+
+.experience span {
+  font-size: 10px;
+  display: block;
+}
+
+.experience .jobTitle {
+  display: flex;
+  margin: 1em 0;
+  justify-content: space-between;
+}
+
+.experience .icon {
+  text-align: center;
+}
 /* End Homepage Styles */
 
 /* Header Styles */
