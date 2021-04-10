@@ -1,12 +1,12 @@
 /* Global */
 .section {
   padding: 1em;
-  height: 100vh;
+  /* height: 100vh; */
 }
 /* end global */
 /* Homepage Styles */
 .container {
-  min-height: 100vh;
+  min-height: 60vh;
   padding: 0 0.5rem;
   max-width: 1340px;
   margin: 0 auto;
