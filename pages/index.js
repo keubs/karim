@@ -8,12 +8,11 @@ import { FullPage, Slide } from 'react-full-page';
 
 function Home({router}) {
   return (
-    <FullPage>
+    <>
       <Head>
         <title>[K  A  R  I  M]  [S  A  L  E  H]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Slide>
           <section className={styles.section}>
             <div className={styles.container}>
               <Header styles={styles} currentPath={router.pathname} />
@@ -35,8 +34,6 @@ function Home({router}) {
               </main>
             </div>
           </section>
-        </Slide>
-        <Slide>
           <section className={styles.section}>
             <div className={styles.container}>
               <h2>About Karim</h2>
@@ -80,8 +77,6 @@ function Home({router}) {
               </div>
               </div>
           </section>
-        </Slide>
-        <Slide>
           <section>
             <div className={styles.container}>
               <div className={styles.cardLeft}>
@@ -126,8 +121,6 @@ function Home({router}) {
                 </div>
             </div>
           </section>
-        </Slide>
-        <Slide>
           <section className={styles.section}>
             <div className={styles.container}>
               <h2>Skills</h2>
@@ -153,8 +146,6 @@ function Home({router}) {
               </div>
             </div>
           </section>
-        </Slide>
-        <Slide>
         <section className={styles.section}>
           <div className={styles.container}>
             <h2>Tools</h2>
@@ -202,8 +193,6 @@ function Home({router}) {
             </div>
           </div>
         </section>
-        </Slide>
-        <Slide>
         <section className={styles.section}>
           <div className={styles.container}>
             <h2>Experience</h2>
@@ -261,9 +250,8 @@ function Home({router}) {
             </div>
           </div>
         </section>
-        </Slide>
       <footer className={styles.footer} />
-    </FullPage>
+    </>
   )
 }
 
