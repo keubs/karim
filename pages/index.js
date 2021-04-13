@@ -4,11 +4,21 @@ import Header from '../components/header'
 import styles from '../styles/Home.module.css'
 // import headerStyles from '../styles/Header.modules.css';
 import { withRouter } from 'next/router'
-import { FullPage, Slide } from 'react-full-page';
+import { Element, Link } from 'react-scroll';
+import { motion } from "framer-motion";
 
 function Home({router}) {
   return (
-    <>
+    <motion.div
+      layoutId="home"
+      className={styles.fullbody_home}
+      initial={{ 
+        backgroundPosition: "left bottom",
+        backgroundColor: '#272626',
+        backgroundSize: '200% 100%',
+        scale: '100%'
+      }}
+    >
       <Head>
         <title>[K  A  R  I  M]  [S  A  L  E  H]</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,75 +30,84 @@ function Home({router}) {
         <div className={styles.container}>
           <main className={styles.main}>
             <div className={styles.intro}>
-              <h1 className={styles.title}>
-                Karim
-              </h1>
+              <motion.h1
+                className={styles.title}
+                layoutId="title"
+                initial={{
+                  marginLeft: 0
+                }}
+                animate={{marginLeft: '0', color: 'white'}}
+              >
+                  Karim
+              </motion.h1>
               <p>
                 Advocate for a shoeless world &ndash; I&apos;m an endless wonderer who derives joy from noticing the unseen.
               </p>
             </div>
             <Image src='/images/karim.png' width="470px" height="601px" />
             <div className={styles.get_in_touch}>
-              <a href="mailto:karimsaleh-design@gmail.com">
+              <Link className="scrollLink" to="contact" smooth>
                 <div className={styles.circle}>Get In Touch</div>
-              </a>
+              </Link>
               <div className={styles.social_links}>
-                <a href="#">Insta</a><br />
-                <a href="#">Spotify</a><br />
+                <a target="_blank" href="http://instagram.com/karimsaleh">Insta</a><br />
+                <a target="_blank" href="https://open.spotify.com/user/karimsaleh888888?si=ccd71f9edfe14315">Spotify</a><br />
                 <a href="#">LinkdedIn</a>
               </div>
             </div>
           </main>
         </div>
-        <div class={styles.scroll}>
-          <a href="#">
+        <div className={styles.scroll}>
+          <Link className="scrollLink" to="body" smooth={true}>
             <Image src='/images/scroll-vector.png' width="42px" height="40px" />
-          </a>
+          </Link>
         </div>
       </section>
-      <section className={styles.section}>
-        <div className={styles.container}>
-          <h2>About Karim</h2>
-          <div className={styles.cardLeft}>
-            <Image src='/images/image-design.png' width="662px" height="417px" />
-            <div className={styles.cardCopy}>
-              <div className={styles.cardTitles}>
-                <h1 className={styles.cardTitle}>
-                  Design
-                </h1>
-                <h3 className={styles.cardTitleSubText}>
-                  I don't believe<br/>in bandaids
-                </h3>
-              </div>
-              <p>
-                My community knows me as someone who will ask the right questions. I design because I believe all things are capable of growth if you nurture the root of the issue, instead of avoiding it.  
-              </p>
-            </div>
-          </div>
-          <div className={styles.cardRight}>
-            <Image src='/images/image-values.png' width="662px" height="417px" />
-            <div className={styles.cardCopy}>
-              <div className={styles.cardTitles}>
-                <h1 className={styles.cardTitle}>
-                  Values
-                </h1>
-                <h3 className={styles.cardTitleSubText}>
-                  Social<br/>Currency
-                </h3>
-              </div>
+      <Element name="body">
+        <section className={styles.section}>
+          <div className={styles.container}>
+              <h2>About Karim</h2>          
+            <div className={styles.cardLeft}>
+              <Image src='/images/image-design.png' width="662px" height="417px" />
+              <div className={styles.cardCopy}>
+                <div className={styles.cardTitles}>
+                  <h1 className={styles.cardTitle}>
+                    Design
+                  </h1>
+                  <h3 className={styles.cardTitleSubText}>
+                    I don't believe<br/>in bandaids
+                  </h3>
+                </div>
                 <p>
-                  My eneagram says I’m a challenger type. I raise myself and my community through: 
+                  My community knows me as someone who will ask the right questions. I design because I believe all things are capable of growth if you nurture the root of the issue, instead of avoiding it.  
                 </p>
-                <ul>
-                  <li>Strong Commmunication</li> 
-                  <li>Transparency </li> 
-                  <li>Vulberabilty</li> 
-                  <li>Support</li>
-                </ul>
+              </div>
+            </div>
+            <div className={styles.cardRight}>
+              <Image src='/images/image-values.png' width="662px" height="417px" />
+              <div className={styles.cardCopy}>
+                <div className={styles.cardTitles}>
+                  <h1 className={styles.cardTitle}>
+                    Values
+                  </h1>
+                  <h3 className={styles.cardTitleSubText}>
+                    Social<br/>Currency
+                  </h3>
+                </div>
+                  <p>
+                    My eneagram says I’m a challenger type. I raise myself and my community through: 
+                  </p>
+                  <ul>
+                    <li>Strong Commmunication</li> 
+                    <li>Transparency </li> 
+                    <li>Vulberabilty</li> 
+                    <li>Support</li>
+                  </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Element>
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.cardLeft}>
@@ -262,8 +281,23 @@ function Home({router}) {
           </div>
         </div>
       </section>
+      <Element name="contact" />
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <h2>Contact</h2>
+          <div className={styles.contact}>
+            <h3>I'M THE TYPE OF TEXTER WHO CALLS (but I send a mean email)</h3>
+            <span className={styles.touch}>GET IN TOUCH</span>
+            <div>
+                <a target="_blank" href="http://instagram.com/karimsaleh">Insta</a><br />
+                <a target="_blank" href="https://open.spotify.com/user/karimsaleh888888?si=ccd71f9edfe14315">Spotify</a><br />
+                <a href="#">LinkdedIn</a>
+              </div>
+          </div>
+        </div>
+      </section>
       <footer className={styles.footer} />
-    </>
+    </motion.div>
   )
 }
 

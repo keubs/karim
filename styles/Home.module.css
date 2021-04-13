@@ -49,6 +49,13 @@
   letter-spacing: 15px;
 }
 
+.fullbody_home {
+  /* background: linear-gradient(to right, #272626 50%, white 50%); */
+  /* background-size: 200% 100%;
+  background-position:left bottom; */
+  min-height: 100vh;
+}
+
 .get_in_touch {
   padding: 1em;
   background-image: url('/images/Email.svg');
@@ -242,6 +249,15 @@
 
 .experience .icon {
   text-align: center;
+}
+
+.contact {
+  padding: 4em 1em;
+}
+
+.contact .touch {
+  font-size: 8em;
+  font-family: 'monument_extendedregular'
 }
 /* End Homepage Styles */
 

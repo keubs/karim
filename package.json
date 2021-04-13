@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.2.0",
+    "framer-motion": "^4.1.3",
     "next": "^10.1.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-full-page": "zwug/react-full-page"
+    "react-full-page": "zwug/react-full-page",
+    "react-scroll": "^1.8.2"
   }
 }
