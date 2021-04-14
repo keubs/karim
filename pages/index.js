@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/header'
 import styles from '../styles/Home.module.css'
-// import headerStyles from '../styles/Header.modules.css';
+import headerStyles from '../styles/Header.module.css'
 import { withRouter } from 'next/router'
 import { Element, Link } from 'react-scroll';
 import { motion } from "framer-motion";
@@ -23,9 +23,9 @@ function Home({router}) {
         <title>[K  A  R  I  M]  [S  A  L  E  H]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className={styles.section}>
-        <Header styles={styles} currentPath={router.pathname} />
-      </section>
+      <motion.section layoutId="header" className={styles.section}>
+        <Header styles={headerStyles} currentPath={router.pathname} />
+      </motion.section>
       <section className={styles.top}>
         <div className={styles.container}>
           <main className={styles.main}>
@@ -229,52 +229,62 @@ function Home({router}) {
           <h2>Experience</h2>
           <div className={styles.experiences}>
             <div className={styles.experience}>
-              <h3 className="dates">2020 - Current</h3>
-              <div className={styles.jobTitle}>
-                <h1 className="title">UX/UI Designer</h1>
-                <div className={styles.icon}>
-                  <img src="/images/bulb-icon.png" className="icon" />
-                  <span className={styles.companyName}>Freelance</span>
+              <div>
+                <h3 className="dates">2020 - Current</h3>
+                <div className={styles.jobTitle}>
+                  <h1 className="title">UX/UI Designer</h1>
+                  <div className={styles.icon}>
+                    <img src="/images/bulb-icon.png" className="icon" />
+                    <span className={styles.companyName}>Freelance</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div className={styles.experience}>
-              <h3 className="dates">2020</h3>
-              <div className={styles.jobTitle}>
-                <h1 className="title">Creative Producer</h1>
-                <div className={styles.icon}>
-                  <img src="/images/imprint-icon.png" className="icon" />
-                  <span className={styles.companyName}>Imprint Projects</span>
+              <div>
+                <h3 className="dates">2020</h3>
+                <div className={styles.jobTitle}>
+                  <h1 className="title">Creative Producer</h1>
+                  <div className={styles.icon}>
+                    <img src="/images/imprint-icon.png" className="icon" />
+                    <span className={styles.companyName}>Imprint Projects</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div className={styles.experience}>
-              <h3 className="dates">2017 - 2020</h3>
-              <div className={styles.jobTitle}>
-                <h1 className="title">Director - San Francisco</h1>
-                <div className={styles.icon}>
-                  <img src="/images/sofar-icon.png" className="icon" />
-                  <span className={styles.companyName}>Sofar Sounds</span>
+              <div>
+                <h3 className="dates">2017 - 2020</h3>
+                <div className={styles.jobTitle}>
+                  <h1 className="title">Director - San Francisco</h1>
+                  <div className={styles.icon}>
+                    <img src="/images/sofar-icon.png" className="icon" />
+                    <span className={styles.companyName}>Sofar Sounds</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div className={styles.experience}>
-              <h3 className="dates">2016 - 2017</h3>
-              <div className={styles.jobTitle}>
-                <h1 className="title">Artist Relations Director</h1>
-                <div className={styles.icon}>
-                  <img src="/images/sofar-icon.png" className="icon" />
-                  <span className={styles.companyName}>Sofar Sounds</span>
+              <div>
+                <h3 className="dates">2016 - 2017</h3>
+                <div className={styles.jobTitle}>
+                  <h1 className="title">Artist Relations Director</h1>
+                  <div className={styles.icon}>
+                    <img src="/images/sofar-icon.png" className="icon" />
+                    <span className={styles.companyName}>Sofar Sounds</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div className={styles.experience}>
-              <h3 className="dates">2016 - 2017</h3>
-              <div className={styles.jobTitle}>
-                <h1 className="title">Account Manager</h1>
-                <div className={styles.icon}>
-                  <img src="/images/airbnb-icon.png" className="icon" />
-                  <span className={styles.companyName}>Airbnb</span>
+              <div>
+                <h3 className="dates">2016 - 2017</h3>
+                <div className={styles.jobTitle}>
+                  <h1 className="title">Account Manager</h1>
+                  <div className={styles.icon}>
+                    <img src="/images/airbnb-icon.png" className="icon" />
+                    <span className={styles.companyName}>Airbnb</span>
+                  </div>
                 </div>
               </div>
             </div>

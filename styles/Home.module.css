@@ -8,6 +8,7 @@
 .top {
   padding: 9em 5em 5em 5em;
   min-height: 100vh;
+  position: relative;
 }
 .container {
   min-height: 60vh;
@@ -249,10 +250,13 @@
 
 .experience .icon {
   text-align: center;
+  min-width: 200px;
+  align-self: flex-end;
 }
 
 .contact {
   padding: 4em 1em;
+  min-height: 100vh;
 }
 
 .contact .touch {
@@ -260,44 +264,6 @@
   font-family: 'monument_extendedregular'
 }
 /* End Homepage Styles */
-
-/* Header Styles */
-.header {
-  width: 17rem;
-}
-
-.header ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 2rem;
-  font-family: 'monument_extendedlight';
-  justify-content: space-between;
-}
-
-.header a {
-  padding-bottom: 10px;
-  color: #F6F1F1;
-  text-transform: uppercase;
-}
-
-.selected {
-  position: relative;
-}
-
-.selected:before {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 1px solid white;
-}
-
-/* End Header Styles */
 
 /* Footer */
 .footer {

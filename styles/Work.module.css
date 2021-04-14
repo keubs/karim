@@ -1,0 +1,92 @@
+/* Global */
+.section {
+  padding: 1em;
+}
+
+/* end global */
+/* Page Styles */
+.fullbody_work {
+  background: linear-gradient(to right, #272626 50%, #F3EFE8 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  animation: animatedBackground 1s linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes animatedBackground {
+  from { background-position: left bottom; }
+  to { background-position: right bottom; }
+}
+
+.top {
+  padding: 9em 5em 5em 5em;
+  min-height: 100vh;
+  position: relative;
+}
+.container {
+  min-height: 60vh;
+  padding: 0 0.5rem;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.main {
+  position: relative;
+  color: #F6F1F1;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0em;
+}
+
+.intro {
+  width: 587px;
+  font-size: 1.275rem;
+  margin-top: 12em;
+}
+
+.title {
+  margin: 0;
+  font-size: 6.75rem;
+  font-family: 'monument_extendedregular';
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+
+.get_in_touch {
+  padding: 1em;
+  background-image: url('/images/Email.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  display: flex;
+  flex-direction: column;
+  margin-top: -250px;
+}
+
+.circle {
+  background: #B28F59;
+  color: #F6F1F1;
+  width: 211px;
+  height: 211px;
+  border-radius: 211px;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1.7em;
+  margin-right: 0.8em;
+  transform: rotate(9deg);
+  flex-grow: 1;
+}
+
+@keyframes slideIn {
+  0% {
+    background-position: left bottom
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
