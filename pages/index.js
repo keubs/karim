@@ -29,21 +29,31 @@ function Home({router}) {
       <section className={styles.top}>
         <div className={styles.container}>
           <main className={styles.main}>
-            <div className={styles.intro}>
-              <motion.h1
+            <div className={styles.intro_holder}>
+            </div>
+            <motion.div
+              className={styles.intro}
+              initial={{
+                left: 0,
+              }}
+              // animate={{
+              //   right: 0,
+              //   left: 'inherit',
+              // }}
+              // transition={{
+              //   duration: .4
+              // }}
+            >
+              <h1
                 className={styles.title}
                 layoutId="title"
-                initial={{
-                  marginLeft: 0
-                }}
-                animate={{marginLeft: '0', color: 'white'}}
               >
                   Karim
-              </motion.h1>
+              </h1>
               <p>
                 Advocate for a shoeless world &ndash; I&apos;m an endless wonderer who derives joy from noticing the unseen.
               </p>
-            </div>
+            </motion.div>
             <Image src='/images/karim.png' width="470px" height="601px" />
             <div className={styles.get_in_touch}>
               <Link className="scrollLink" to="contact" smooth>

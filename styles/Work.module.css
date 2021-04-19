@@ -6,6 +6,7 @@
 /* end global */
 /* Page Styles */
 .fullbody_work {
+  color: black;
   background: linear-gradient(to right, #272626 50%, #F3EFE8 50%);
   background-size: 200% 100%;
   background-position:right bottom;
@@ -37,12 +38,19 @@
   display: flex;
   justify-content: space-between;
   margin-top: 0em;
+  width: 81%;
 }
 
 .intro {
+  color: #272626;
   width: 587px;
   font-size: 1.275rem;
   margin-top: 12em;
+  position: absolute;
+  left: 0;
+}
+.intro_holder {
+  width: 587px;
 }
 
 .title {
@@ -53,15 +61,20 @@
   letter-spacing: 15px;
 }
 
-
 .get_in_touch {
   padding: 1em;
-  background-image: url('/images/Email.svg');
+  background-image: url('/images/Email_black.svg');
   background-repeat: no-repeat;
   background-position: top right;
   display: flex;
   flex-direction: column;
   margin-top: -250px;
+  position: relative;
+}
+
+.get_in_touch>a {
+  position: absolute;
+  left: -16px;
 }
 
 .circle {
@@ -80,6 +93,25 @@
   margin-right: 0.8em;
   transform: rotate(9deg);
   flex-grow: 1;
+}
+
+.cardLeft {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em;
+  min-height: 500px;
+}
+
+.cardRight {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin: 3em;
+}
+
+.cardCopy {
+  font-family: 'neue_machinalight';
+  width: 537px;
 }
 
 @keyframes slideIn {
