@@ -46,7 +46,6 @@ function Home({router}) {
             >
               <h1
                 className={styles.title}
-                layoutId="title"
               >
                   Karim
               </h1>

@@ -31,6 +31,21 @@
   margin: 0 auto;
 }
 
+.container h2 {
+  position: relative;
+}
+
+.container h2:before{
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  border-bottom: 3px solid #272626;
+}
+
+
 .main {
   position: relative;
   color: #F6F1F1;
@@ -99,19 +114,80 @@
   display: flex;
   justify-content: space-around;
   margin: 3em;
-  min-height: 500px;
+  text-align: center;
+  margin: 3em 3em 10em 3em;
+  position: relative;
+}
+
+.cardLeft img {
+  z-index: 0;
+}
+
+.cardLeft h1 {
+  font-size: 75px;
+  font-family: 'monument_extendedregular';
+  z-index: 1;
+  margin-bottom: 0px;
+}
+
+.cardLeft .number {
+  position: absolute;
+  left: -70px;
+  bottom: 0px;
+}
+
+.cardLeft .number h1 {
+  font-family: 'neue_machinalight';
 }
 
 .cardRight {
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
-  margin: 3em;
+  margin: 3em 3em 10em 3em;
+  position: relative;
+}
+
+.cardRight .number {
+  position: absolute;
+  right: -70px;
+  bottom: 0px;
+}
+
+.cardRight .number h1 {
+  font-family: 'neue_machinalight';
+}
+
+.cardRight h1 {
+  font-size: 75px;
+  font-family: 'monument_extendedregular';
+  margin-bottom: 0px;
 }
 
 .cardCopy {
-  font-family: 'neue_machinalight';
-  width: 537px;
+  font-family: 'monument_extendedlight';
+  width: 650px;
+  z-index: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cardRight .cardCopy {
+  margin-right: -140px; 
+}
+
+.cardLeft .cardCopy {
+  margin-left: -140px; 
+}
+
+.contact {
+  padding: 4em 1em;
+  min-height: 100vh;
+}
+
+.contact .touch {
+  font-size: 8em;
+  font-family: 'monument_extendedregular'
 }
 
 @keyframes slideIn {
