@@ -6,18 +6,28 @@
 /* end global */
 /* Page Styles */
 .fullbody_work {
-  color: black;
-  background: linear-gradient(to right, #272626 50%, #F3EFE8 50%);
-  background-size: 200% 100%;
-  background-position:right bottom;
-  animation: animatedBackground 1s linear;
-  animation-iteration-count: 1;
+  color: #272626;
+  background: #F3EFE8;
+  mix-blend-mode: difference;
 }
 
-@keyframes animatedBackground {
+.overlay_bg {
+  height:0;
+  width:0;
+  background: linear-gradient(to right, #272626 50%, #F3EFE8 50%);
+  width: 100vw;
+  height: 100vh;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: animatedBackgroundLTR .75s linear;
+  animation-iteration-count: 1;
+  position: absolute;
+}
+
+@keyframes animatedBackgroundLTR {
   from { background-position: left bottom; }
   to { background-position: right bottom; }
-}
+} 
 
 .top {
   padding: 9em 5em 5em 5em;
@@ -48,7 +58,7 @@
 
 .main {
   position: relative;
-  color: #F6F1F1;
+  /* color: #F6F1F1; */
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
@@ -57,7 +67,8 @@
 }
 
 .intro {
-  color: #272626;
+  color: #F3EFE8;
+  mix-blend-mode: difference;
   width: 587px;
   font-size: 1.275rem;
   margin-top: 12em;
@@ -73,6 +84,7 @@
   font-size: 6.75rem;
   font-family: 'monument_extendedregular';
   text-transform: uppercase;
+  position: relative;
   letter-spacing: 15px;
 }
 
@@ -85,6 +97,7 @@
   flex-direction: column;
   margin-top: -250px;
   position: relative;
+  width: 241px;
 }
 
 .get_in_touch>a {

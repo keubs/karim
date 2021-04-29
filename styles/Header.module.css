@@ -2,6 +2,7 @@
 /* Header Styles */
 .header {
   width: 17rem;
+  position: relative;
 }
 
 .header ul {

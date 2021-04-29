@@ -4,14 +4,23 @@ import Header from '../components/header'
 import Image from 'next/image'
 import styles from '../styles/Work.module.css'
 import headerStyles from '../styles/Header.module.css'
-import { motion } from "framer-motion";
+import {   
+  motion,
+  useTransform,
+  useViewportScroll,
+} from "framer-motion";
 import { Element, Link } from 'react-scroll';
 const Work = ({router}) => {
+  const { scrollY } = useViewportScroll();
+  const y1 = useTransform(scrollY, [0, 300], [0, 200]);
+  const y2 = useTransform(scrollY, [0, 300], [0, -100]);
+
   return (
     <motion.div
       layoutId="home"
       className={styles.fullbody_work}
     >
+      <div className={styles.overlay_bg}></div>
       <Head>
         <title>[K  A  R  I  M]  [S  A  L  E  H]</title>
         <link rel="icon" href="/favicon.ico" />
@@ -39,7 +48,7 @@ const Work = ({router}) => {
                   // left: 'inherit',
                 }}
                 transition={{
-                  duration: 1
+                  duration: .75,
                 }}
               >
                 <h1
@@ -68,12 +77,15 @@ const Work = ({router}) => {
             <Image src='/images/controlhub_work.png' width="662px" height="417px" />
             <div className={styles.cardCopy}>
               <div className={styles.cardTitles}>
-                <h1 className={styles.cardTitle}>
+                <motion.h1
+                  className={styles.cardTitle}
+                  // style={{ y: y1, x: 50, }}
+                >
                   ControlHub
-                </h1>
-                <h3 className={styles.cardTitleSubText}>
+                </motion.h1>
+                <motion.h3 className={styles.cardTitleSubText}>
                   Who said accounting can’t be fun?
-                </h3>
+                </motion.h3>
               </div>
             </div>
             <div className={styles.number}>

@@ -40,9 +40,9 @@ function Home({router}) {
               //   right: 0,
               //   left: 'inherit',
               // }}
-              // transition={{
-              //   duration: .4
-              // }}
+              transition={{
+                delay: .4
+              }}
             >
               <h1
                 className={styles.title}
