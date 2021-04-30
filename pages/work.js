@@ -12,8 +12,12 @@ import {
 import { Element, Link } from 'react-scroll';
 const Work = ({router}) => {
   const { scrollY } = useViewportScroll();
-  const y1 = useTransform(scrollY, [0, 300], [0, 200]);
-  const y2 = useTransform(scrollY, [0, 300], [0, -100]);
+  const y1_1 = useTransform(scrollY, [500, 800], [0, 150]);
+  const y2_1 = useTransform(scrollY, [500, 800], [50, 100]);
+  const y1_2 = useTransform(scrollY, [600, 700], [0, 150]);
+  const y2_2 = useTransform(scrollY, [700, 1000], [50, 100]);
+  const y1_3 = useTransform(scrollY, [900, 1300], [0, 150]);
+  const y2_3 = useTransform(scrollY, [900, 1300], [50, 100]);
 
   return (
     <motion.div
@@ -61,7 +65,6 @@ const Work = ({router}) => {
                   Exploring blockchain solutions in shared ownership as a tool to drive patron engagement.  
                 </p>
               </motion.div>
-            {/* <Image src='/images/karim.png' width="470px" height="601px" /> */}
             <div className={styles.get_in_touch}>
               <Link className="scrollLink" to="contact" smooth>
                   <div className={styles.circle}>Get In Touch</div>
@@ -74,19 +77,29 @@ const Work = ({router}) => {
         <div className={styles.container}>
           <h2>Selected Work</h2>          
           <div className={styles.cardRight}>
-            <Image src='/images/controlhub_work.png' width="662px" height="417px" />
+            <motion.div
+              style={{y: y2_1}}
+            >
+              <Image
+                src='/images/controlhub_work.png' 
+                width="662px"
+                height="417px"
+              />
+            </motion.div>
             <div className={styles.cardCopy}>
-              <div className={styles.cardTitles}>
-                <motion.h1
+              <motion.div
+                style={{ y: y1_1, }}
+                className={styles.cardTitles}>
+                <h1
                   className={styles.cardTitle}
-                  // style={{ y: y1, x: 50, }}
                 >
                   ControlHub
-                </motion.h1>
-                <motion.h3 className={styles.cardTitleSubText}>
+                </h1>
+                <h3
+                  className={styles.cardTitleSubText}>
                   Who said accounting can’t be fun?
-                </motion.h3>
-              </div>
+                </h3>
+              </motion.div>
             </div>
             <div className={styles.number}>
               <h1>
@@ -95,16 +108,29 @@ const Work = ({router}) => {
             </div>
           </div>
           <div className={styles.cardLeft}>
-            <Image src='/images/electric-dusk_work.png' width="662px" height="417px" />
+            <motion.div
+              style={{y: y2_2}}
+            >
+              <Image
+                src='/images/electric-dusk_work.png'
+                width="662px"
+                height="417px"
+              />
+            </motion.div>
             <div className={styles.cardCopy}>
-              <div className={styles.cardTitles}>
-                <h1 className={styles.cardTitle}>
+              <motion.div
+                style={{ y: y1_2, }}
+                className={styles.cardTitles}>
+              <h1
+                  className={styles.cardTitle}
+                >
                   Electric Dusk
                 </h1>
-                <h3 className={styles.cardTitleSubText}>
+                <h3
+                  className={styles.cardTitleSubText}>
                   Drive in movies, a new generation
                 </h3>
-              </div>
+              </motion.div>
             </div>
             <div className={styles.number}>
               <h1>
@@ -113,16 +139,29 @@ const Work = ({router}) => {
             </div>
           </div>
           <div className={styles.cardRight}>
-            <Image src='/images/controlhub_work.png' width="662px" height="417px" />
+            <motion.div
+              style={{y: y2_3}}
+            >
+              <Image
+                src='/images/controlhub_work.png' 
+                width="662px"
+                height="417px"
+              />
+            </motion.div>
             <div className={styles.cardCopy}>
-              <div className={styles.cardTitles}>
-                <h1 className={styles.cardTitle}>
+              <motion.div
+                style={{ y: y1_3, }}
+                className={styles.cardTitles}>
+              <h1
+                  className={styles.cardTitle}
+                >
                   Vezt
                 </h1>
-                <h3 className={styles.cardTitleSubText}>
+                <h3
+                  className={styles.cardTitleSubText}>
                   Own shares of your favorite song
                 </h3>
-              </div>
+              </motion.div>
             </div>
             <div className={styles.number}>
               <h1>
