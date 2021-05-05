@@ -12,12 +12,19 @@ import {
 import { Element, Link } from 'react-scroll';
 const Work = ({router}) => {
   const { scrollY } = useViewportScroll();
-  const y1_1 = useTransform(scrollY, [500, 800], [0, 150]);
-  const y2_1 = useTransform(scrollY, [500, 800], [50, 100]);
-  const y1_2 = useTransform(scrollY, [600, 700], [0, 150]);
-  const y2_2 = useTransform(scrollY, [700, 1000], [50, 100]);
-  const y1_3 = useTransform(scrollY, [900, 1300], [0, 150]);
-  const y2_3 = useTransform(scrollY, [900, 1300], [50, 100]);
+  const textTransform = [0, 150];
+  const cardTransform = [150, 0];
+  const firstCard = [240, 1040];
+  const secondCard = [870, 1670];
+  const thirdCard = [1470, 2270];
+
+  const y1_1 = useTransform(scrollY, firstCard, textTransform);
+  const y2_1 = useTransform(scrollY, firstCard, cardTransform);
+  const y1_2 = useTransform(scrollY, secondCard, textTransform);
+  const y2_2 = useTransform(scrollY, secondCard, cardTransform);
+  const y1_3 = useTransform(scrollY, thirdCard, textTransform);
+  const y2_3 = useTransform(scrollY, thirdCard, cardTransform);
+  
 
   return (
     <motion.div
@@ -73,12 +80,12 @@ const Work = ({router}) => {
           </main>
         </div>
       </section>
-      <section className={styles.section}>
+      <section id="work" className={styles.section}>
         <div className={styles.container}>
           <h2>Selected Work</h2>          
-          <div className={styles.cardRight}>
+          <div id="card0" className={styles.cardRight}>
             <motion.div
-              style={{y: y2_1}}
+              style={{ y: y2_1 }}
             >
               <Image
                 src='/images/controlhub_work.png' 
@@ -86,7 +93,7 @@ const Work = ({router}) => {
                 height="417px"
               />
             </motion.div>
-            <div className={styles.cardCopy}>
+            <div id="card1" className={styles.cardCopy}>
               <motion.div
                 style={{ y: y1_1, }}
                 className={styles.cardTitles}>
@@ -107,7 +114,7 @@ const Work = ({router}) => {
               </h1>
             </div>
           </div>
-          <div className={styles.cardLeft}>
+          <div id="card2" className={styles.cardLeft}>
             <motion.div
               style={{y: y2_2}}
             >
@@ -117,7 +124,7 @@ const Work = ({router}) => {
                 height="417px"
               />
             </motion.div>
-            <div className={styles.cardCopy}>
+            <div id="card3" className={styles.cardCopy}>
               <motion.div
                 style={{ y: y1_2, }}
                 className={styles.cardTitles}>
@@ -138,7 +145,7 @@ const Work = ({router}) => {
               </h1>
             </div>
           </div>
-          <div className={styles.cardRight}>
+          <div id="card4" className={styles.cardRight}>
             <motion.div
               style={{y: y2_3}}
             >
@@ -148,7 +155,7 @@ const Work = ({router}) => {
                 height="417px"
               />
             </motion.div>
-            <div className={styles.cardCopy}>
+            <div id="card5" className={styles.cardCopy}>
               <motion.div
                 style={{ y: y1_3, }}
                 className={styles.cardTitles}>
