@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import NextLink from 'next/link';
 import { withRouter } from 'next/router'
 import Header from '../components/header'
 import Image from 'next/image'
@@ -12,8 +13,8 @@ import {
 import { Element, Link } from 'react-scroll';
 const Work = ({router}) => {
   const { scrollY } = useViewportScroll();
-  const textTransform = [0, 150];
-  const cardTransform = [150, 0];
+  const textTransform = [-50, 50];
+  const cardTransform = [-50, 0];
   const firstCard = [240, 1040];
   const secondCard = [870, 1670];
   const thirdCard = [1470, 2270];
@@ -33,7 +34,7 @@ const Work = ({router}) => {
     >
       <div className={styles.overlay_bg}></div>
       <Head>
-        <title>[K  A  R  I  M]  [S  A  L  E  H]</title>
+        <title>|w o r k| [K  A  R  I  M]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <motion.section
@@ -82,38 +83,41 @@ const Work = ({router}) => {
       </section>
       <section id="work" className={styles.section}>
         <div className={styles.container}>
-          <h2>Selected Work</h2>          
-          <div id="card0" className={styles.cardRight}>
-            <motion.div
-              style={{ y: y2_1 }}
-            >
-              <Image
-                src='/images/controlhub_work.png' 
-                width="662px"
-                height="417px"
-              />
-            </motion.div>
-            <div id="card1" className={styles.cardCopy}>
+          <h2>Selected Work</h2>
+          <NextLink href="/studies/control-hub">
+            <div id="card0" className={`${styles.cardRight} ${styles.link}`}>
               <motion.div
-                style={{ y: y1_1, }}
-                className={styles.cardTitles}>
-                <h1
-                  className={styles.cardTitle}
-                >
-                  ControlHub
-                </h1>
-                <h3
-                  className={styles.cardTitleSubText}>
-                  Who said accounting can’t be fun?
-                </h3>
+                style={{ y: y2_1 }}
+              >
+                <Image
+                  src='/images/controlhub_work.png' 
+                  width="662px"
+                  height="417px"
+                />
               </motion.div>
+              <div id="card1" className={styles.cardCopy}>
+                <motion.div
+                  style={{ y: y1_1, }}
+                  className={styles.cardTitles}>
+                  <h1
+                    className={styles.cardTitle}
+                  >
+                    ControlHub
+                  </h1>
+                  <h3
+                    className={styles.cardTitleSubText}>
+                    Who said accounting can’t be fun?
+                  </h3>
+                  <span className={styles.view_study_link}>View Case Study</span>
+                </motion.div>
+              </div>
+              <div className={styles.number}>
+                <h1>
+                  #1
+                </h1>
+              </div>
             </div>
-            <div className={styles.number}>
-              <h1>
-                #1
-              </h1>
-            </div>
-          </div>
+          </NextLink>       
           <div id="card2" className={styles.cardLeft}>
             <motion.div
               style={{y: y2_2}}
@@ -137,6 +141,7 @@ const Work = ({router}) => {
                   className={styles.cardTitleSubText}>
                   Drive in movies, a new generation
                 </h3>
+                <span className={styles.view_study_link}>View Case Study</span>
               </motion.div>
             </div>
             <div className={styles.number}>
@@ -168,6 +173,7 @@ const Work = ({router}) => {
                   className={styles.cardTitleSubText}>
                   Own shares of your favorite song
                 </h3>
+                <span className={styles.view_study_link}>View Case Study</span>
               </motion.div>
             </div>
             <div className={styles.number}>

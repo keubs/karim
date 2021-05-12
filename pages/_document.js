@@ -1,4 +1,17 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { Component } from 'react';
+class HeadElement extends Component {
+  componentDidMount() {
+      const {bodyClass} = this.props
+      document.querySelector("body").classList.add(bodyClass || "light")
+  }
+
+  render() {
+      return <Head>
+          {/* Whatever other stuff you're using in Head */}
+      </Head>
+  }
+}
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -9,10 +22,8 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
-        <body onMouseEnter={() => {
-          console.log('hi');
-        }}>
+        <HeadElement bodyClass='work' />
+        <body>
           <Main />
           <NextScript />
         </body>

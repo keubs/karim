@@ -5,7 +5,7 @@ const Header = ({styles, currentPath}) => {
     {text: 'Work', path: '/work'}
   ]
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} ${styles[currentPath.split('/')[1]]}`}>
       <ul>
         {paths.map(path => (
           <li

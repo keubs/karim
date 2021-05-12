@@ -98,6 +98,7 @@
   margin-top: -250px;
   position: relative;
   width: 241px;
+  margin-right: -230px;
 }
 
 .get_in_touch>a {
@@ -121,6 +122,11 @@
   margin-right: 0.8em;
   transform: rotate(9deg);
   flex-grow: 1;
+}
+
+.cardLeft.link,
+.cardRight.link {
+  cursor: pointer;
 }
 
 .cardLeft {
@@ -201,6 +207,18 @@
 .contact .touch {
   font-size: 8em;
   font-family: 'monument_extendedregular'
+}
+
+.cardLeft:hover.link .view_study_link,
+.cardRight:hover.link .view_study_link {
+  opacity: 1;
+}
+
+.view_study_link {
+  text-transform: uppercase;
+  font-family: 'monument_extendedregular';
+  transition: all 0.25s ease;
+  opacity: 0;
 }
 
 @keyframes slideIn {
