@@ -68,6 +68,7 @@
   flex-direction: column;
   margin-top: -250px;
   position: relative;
+  width: 240px;
 }
 
 .get_in_touch>a {
@@ -76,7 +77,10 @@
 }
 
 .social_links {
-  margin: 30em 0 0 5em;
+  /* margin: 30em 0 0 5em; */
+  position: absolute;
+  bottom: -80px;
+  left: 40px;
 }
 
 .social_links a {
@@ -127,14 +131,14 @@
 .cardLeft {
   display: flex;
   justify-content: space-around;
-  margin: 3em;
+  margin: 3em 3em 7em;
 }
 
 .cardRight {
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
-  margin: 3em;
+  margin: 3em 3em 7em;
 }
 
 .cardCopy {
@@ -275,12 +279,19 @@
 
 .contact {
   padding: 4em 1em;
-  min-height: 100vh;
+  min-height: 5vh;
 }
 
 .contact .touch {
   font-size: 8em;
-  font-family: 'monument_extendedregular'
+  font-family: 'monument_extendedregular';
+  position: relative;
+}
+
+.rewind {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 /* End Homepage Styles */
 
@@ -290,6 +301,7 @@
   height: 100px;
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: center;
 }
 

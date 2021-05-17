@@ -37,6 +37,7 @@ const Work = ({router}) => {
         <title>|w o r k - K  A  R  I  M]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Element name="top" />
       <motion.section
         layoutId="header"
         className={styles.section}
@@ -204,6 +205,11 @@ const Work = ({router}) => {
           </div>
         </div>
       </section>
+      <footer className={styles.footer}>
+        <Link className="scrollLink" to="top" smooth>
+          <img src="/images/rewind.png" className={styles.rewind} />
+        </Link>
+      </footer> 
     </motion.div>
   );
 };

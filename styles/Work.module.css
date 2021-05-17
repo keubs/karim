@@ -242,6 +242,16 @@
   left: 20%;
 }
 
+.footer {
+  position: relative;
+}
+
+.rewind {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 @keyframes slideIn {
   0% {
     background-position: left bottom

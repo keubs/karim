@@ -23,6 +23,7 @@ function Home({router}) {
         <title>[K  A  R  I  M]  [S  A  L  E  H]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Element name="top" />
       <motion.section layoutId="header" className={styles.section}>
         <Header styles={headerStyles} currentPath={router.pathname} />
       </motion.section>
@@ -160,8 +161,6 @@ function Home({router}) {
               </div>
             </div>
         </div>
-      </section>
-      <section className={styles.section}>
         <div className={styles.container}>
           <h2>Skills</h2>
           <div className={styles.skills}>
@@ -315,7 +314,11 @@ function Home({router}) {
           </div>
         </div>
       </section>
-      <footer className={styles.footer} />
+      <footer className={styles.footer}>
+        <Link className="scrollLink" to="top" smooth>
+          <img src="/images/rewind.png" className={styles.rewind} />
+        </Link>
+      </footer> 
     </motion.div>
   )
 }
