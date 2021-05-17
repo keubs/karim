@@ -38,7 +38,6 @@ const Work = ({router}) => {
       </Head>
       <section className={styles.section}>
         <div className={styles.container}>
-          <h2>Contact</h2>
           <div className={styles.contact}>
             <h3>I'M THE TYPE OF TEXTER WHO CALLS (but I send a mean email)</h3>
             <span className={styles.touch}>GET IN TOUCH</span>

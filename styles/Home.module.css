@@ -101,6 +101,12 @@
   flex-grow: 1;
 }
 
+.circle:hover {
+  transform: rotate(0);
+  width: 220px;
+  height: 220px;
+}
+
 .intro {
   width: 587px;
   font-size: 1.275rem;

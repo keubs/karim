@@ -15,7 +15,7 @@ const Work = ({router}) => {
   const { scrollY } = useViewportScroll();
   const textTransform = [-50, 50];
   const cardTransform = [-50, 0];
-  const firstCard = [240, 1040];
+  const firstCard = [200, 1040];
   const secondCard = [870, 1670];
   const thirdCard = [1470, 2270];
 
@@ -34,7 +34,7 @@ const Work = ({router}) => {
     >
       <div className={styles.overlay_bg}></div>
       <Head>
-        <title>|w o r k| [K  A  R  I  M]</title>
+        <title>|w o r k - K  A  R  I  M]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <motion.section
@@ -57,7 +57,6 @@ const Work = ({router}) => {
                 }}
                 animate={{
                   left: 700,
-                  // left: 'inherit',
                 }}
                 transition={{
                   duration: .75,
@@ -80,9 +79,15 @@ const Work = ({router}) => {
             </div>
           </main>
         </div>
+        <div className={styles.scroll}>
+          <Link className="scrollLink" to="body" smooth={true}>
+            <Image src='/images/scroll-vector-light.png' width="42px" height="40px" />
+          </Link>
+        </div>
       </section>
       <section id="work" className={styles.section}>
         <div className={styles.container}>
+          <Element name="body" />
           <h2>Selected Work</h2>
           <NextLink href="/studies/control-hub">
             <div id="card0" className={`${styles.cardRight} ${styles.link}`}>

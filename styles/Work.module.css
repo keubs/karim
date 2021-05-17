@@ -19,7 +19,7 @@
   height: 100vh;
   background-size: 200% 100%;
   background-position: right bottom;
-  animation: animatedBackgroundLTR .75s linear;
+  animation: animatedBackgroundLTR .75s ease-out;
   animation-iteration-count: 1;
   position: absolute;
 }
@@ -99,6 +99,7 @@
   position: relative;
   width: 241px;
   margin-right: -230px;
+  height: 300px;
 }
 
 .get_in_touch>a {
@@ -107,8 +108,9 @@
 }
 
 .circle {
+  font-family: 'neue_machinalight';
   background: #B28F59;
-  color: #F6F1F1;
+  color: #272626;
   width: 211px;
   height: 211px;
   border-radius: 211px;
@@ -122,6 +124,16 @@
   margin-right: 0.8em;
   transform: rotate(9deg);
   flex-grow: 1;
+  letter-spacing: 10px;
+}
+
+.circle:hover {
+  transform: rotate(0);
+  width: 220px;
+  height: 220px;
+  font-size: 2.5em;
+  padding: 1.5em 0;
+  margin-top: 1.4em;
 }
 
 .cardLeft.link,
@@ -211,14 +223,23 @@
 
 .cardLeft:hover.link .view_study_link,
 .cardRight:hover.link .view_study_link {
-  opacity: 1;
+  height: 2em;
 }
 
 .view_study_link {
   text-transform: uppercase;
   font-family: 'monument_extendedregular';
+  height: 0;
+  overflow: hidden;
+  display: block;
   transition: all 0.25s ease;
-  opacity: 0;
+  /* opacity: 0; */
+}
+
+.scroll {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
 }
 
 @keyframes slideIn {

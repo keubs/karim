@@ -1,18 +1,20 @@
 
 /* Header Styles */
 .header {
-  width: 17rem;
+  padding: .5em 1.75em;
   position: relative;
 }
 
 .header ul {
   display: flex;
-  margin: 0;
   padding: 0;
   list-style-type: none;
   font-size: 2rem;
   font-family: 'monument_extendedlight';
-  justify-content: space-between;
+}
+
+.header li {
+  margin-right: 1em;
 }
 
 .header a {
@@ -41,4 +43,26 @@
   border-bottom: 1px solid #272626;
 }
 
+.headphones {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.headphones:hover {
+  animation: App-logo-spin infinite 1s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rbc-timeslot-group {
+  min-height: 70px !important;
+}
 /* End Header Styles */
