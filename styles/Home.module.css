@@ -88,8 +88,9 @@
 }
 
 .circle {
+  font-family: 'neue_machinalight';
   background: #B28F59;
-  color: #F6F1F1;
+  color: #272626;
   width: 211px;
   height: 211px;
   border-radius: 211px;
@@ -103,12 +104,17 @@
   margin-right: 0.8em;
   transform: rotate(9deg);
   flex-grow: 1;
+  letter-spacing: 10px;
 }
 
 .circle:hover {
   transform: rotate(0);
   width: 220px;
   height: 220px;
+  font-size: 2.5em;
+  padding: 1.5em 0;
+  margin-top: 1.4em;
+  margin-left: -6px;
 }
 
 .intro {

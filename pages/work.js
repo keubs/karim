@@ -207,7 +207,7 @@ const Work = ({router}) => {
       </section>
       <footer className={styles.footer}>
         <Link className="scrollLink" to="top" smooth>
-          <img src="/images/rewind.png" className={styles.rewind} />
+          <img src="/images/rewind-black.png" className={styles.rewind} />
         </Link>
       </footer> 
     </motion.div>
