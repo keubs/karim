@@ -71,7 +71,7 @@
   mix-blend-mode: difference;
   width: 587px;
   font-size: 1.275rem;
-  margin-top: 12em;
+  margin-top: 10em;
   position: absolute;
   left: 0;
 }
@@ -97,7 +97,7 @@
   flex-direction: column;
   margin-top: -250px;
   position: relative;
-  width: 241px;
+  width: 240px;
   margin-right: -230px;
   height: 300px;
 }
@@ -108,23 +108,24 @@
 }
 
 .circle {
-  font-family: 'neue_machinalight';
+  font-family: 'neue_machina';
   background: #B28F59;
-  color: #272626;
+  color: #272627;
   width: 211px;
   height: 211px;
   border-radius: 211px;
   font-size: 2em;
   justify-content: center;
   align-items: center;
-  padding: 2em 0;
+  padding: 2.2em 0;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 1.7em;
+  margin-top: 1.9em;
   margin-right: 0.8em;
   transform: rotate(9deg);
   flex-grow: 1;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
+  line-height: 1em;
 }
 
 .circle:hover {

@@ -60,7 +60,7 @@ const Work = ({router}) => {
                   left: 700,
                 }}
                 transition={{
-                  duration: .75,
+                  duration: 1,
                 }}
               >
                 <h1
