@@ -6,14 +6,14 @@
 /* end global */
 /* Homepage Styles */
 .top {
-  padding: 9em 5em 5em 5em;
+  padding: 5em 3em;
   min-height: 100vh;
   position: relative;
 }
 .container {
   min-height: 60vh;
   padding: 0 0.5rem;
-  max-width: 1340px;
+  /* max-width: 1340px; */
   margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@
   background-position: top right;
   display: flex;
   flex-direction: column;
-  margin-top: -250px;
+  margin-top: -220px;
   position: relative;
   width: 240px;
 }
@@ -88,23 +88,24 @@
 }
 
 .circle {
-  font-family: 'neue_machinalight';
+  font-family: 'neue_machina';
   background: #B28F59;
-  color: #272626;
+  color: #F6F1F1;
   width: 211px;
   height: 211px;
   border-radius: 211px;
   font-size: 2em;
   justify-content: center;
   align-items: center;
-  padding: 2em 0;
+  padding: 2.2em 0;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 1.7em;
+  margin-top: 1.9em;
   margin-right: 0.8em;
   transform: rotate(9deg);
   flex-grow: 1;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
+  line-height: 1em;
 }
 
 .circle:hover {
@@ -120,7 +121,7 @@
 .intro {
   width: 587px;
   font-size: 1.275rem;
-  margin-top: 12em;
+  margin-top: 13em;
   position: absolute;
   left: 0;
 }
@@ -150,6 +151,9 @@
 .cardCopy {
   font-family: 'neue_machinalight';
   width: 537px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cardCopy p {
@@ -168,7 +172,7 @@
 }
 
 .cardTitle {
-  font-family: 'Neue Machina';
+  font-family: 'neue_machina_black';
   font-size: 4em;
   -webkit-text-stroke: 2px white;
   color: #272626;

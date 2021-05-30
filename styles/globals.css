@@ -70,11 +70,38 @@ a {
 }
 
 @font-face {
-  font-family: 'Neue Machina';
+  font-family: 'neue_machina';
+  src: local('Neue Machina Regular'), local('Neue-Machina-Regular'),
+      url('fonts/NeueMachina-Regular.woff2') format('woff2'),
+      url('fonts/NeueMachina-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue_machina_black';
   src: local('Neue Machina Black'), local('Neue-Machina-Black'),
       url('fonts/NeueMachina-Black.woff2') format('woff2'),
       url('fonts/NeueMachina-Black.woff') format('woff'),
       url('fonts/NeueMachina-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neue_machina_ultrabold';
+  src: local('Neue Machina Ultrabold'), local('Neue-Machina-Ultrabold'),
+      url('fonts/NeueMachina-Ultrabold.woff2') format('woff2'),
+      url('fonts/NeueMachina-Ultrabold.woff') format('woff'),
+      url('fonts/NeueMachina-Ultrabold.woff') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'neue_machina_ultralight';
+  src: local('Neue Machina Ultralight'), local('Neue-Machina-Ultralight'),
+      url('fonts/NeueMachina-Ultralight.woff2') format('woff2'),
+      url('fonts/NeueMachina-Ultralight.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
