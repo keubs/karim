@@ -54,7 +54,9 @@ function Home({router}) {
                 Advocate for a shoeless world &ndash; I&apos;m an endless wonderer who derives joy from noticing the unseen.
               </p>
             </motion.div>
-            <Image src='/images/karim.png' width="470px" height="601px" />
+            <div className={styles.karim_image}>
+              <Image src='/images/karim.png' width="505px" height="667px" />
+            </div>
             <div className={styles.get_in_touch}>
               <Link className="scrollLink" to="contact" smooth>
                 <div className={styles.circle}>Get In Touch</div>
@@ -162,7 +164,7 @@ function Home({router}) {
             <h3>Design Things</h3>
               <div className={styles.skillsContainer}>
                 <div>UX Design</div>
-                <div>Business Analyics</div>
+                <div>Business Analysis</div>
                 <div>Client Relations</div>
                 <div>Product Design</div>
                 <div>UX Research</div>
@@ -177,6 +179,9 @@ function Home({router}) {
               <div>Public Speaking</div>
               <div>Craigslist Haggling</div>
             </div>
+          </div>
+          <div className={styles.linkedin_link}>
+            <a href="http://linkedin.com/karim">Complete list on <Image src="/images/linkedin.jpg" width="16px" height="14px" /></a>
           </div>
         </div>
       </section>

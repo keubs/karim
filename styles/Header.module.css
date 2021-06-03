@@ -3,6 +3,8 @@
 .header {
   padding: 0.1em 2.25em;
   position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .header ul {

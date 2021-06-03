@@ -13,7 +13,7 @@
 .container {
   min-height: 60vh;
   padding: 0 0.5rem;
-  max-width: 1340px;
+  max-width: 1450px;
   margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@
   position: relative;
   color: #F6F1F1;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 0em;
   width: 100%;
 }
@@ -54,9 +54,6 @@
 }
 
 .fullbody_home {
-  /* background: linear-gradient(to right, #272626 50%, white 50%); */
-  /* background-size: 200% 100%;
-  background-position:left bottom; */
   min-height: 100vh;
 }
 
@@ -72,6 +69,11 @@
   width: 240px;
 }
 
+.karim_image {
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
 .get_in_touch>a {
   position: absolute;
   left: -16px;
@@ -79,7 +81,7 @@
 
 .social_links {
   position: absolute;
-  bottom: -115px;
+  bottom: -57px;
   left: 50px;
   text-transform: none;
   font-size: 20px;
@@ -96,9 +98,9 @@
   font-family: 'neue_machina';
   background: #B28F59;
   color: #F6F1F1;
-  width: 211px;
-  height: 211px;
-  border-radius: 211px;
+  width: 207px;
+  height: 207px;
+  border-radius: 207px;
   font-size: 2em;
   justify-content: center;
   align-items: center;
@@ -174,6 +176,7 @@
   justify-content: left;
   align-items: center;
   height: 100px;
+  margin: 0 auto;
 }
 
 .cardTitle {
@@ -183,6 +186,7 @@
   color: #272626;
   display: inline-block;
   margin-right: 10px;
+  letter-spacing: 6px;
 }
 
 .cardTitleSubText {
@@ -219,23 +223,31 @@
   border-bottom: 1px solid;
   color: rgb(142, 139, 139);
   font-size: 25px;
+  margin-bottom: 0;
 }
 
 .skillsContainer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  padding: 0em 1em;
+  padding: 0.7em 0 2em;
   font-size: 30px;
-  line-height: 29px;
+  line-height: 18px;
   text-align: center;
   letter-spacing: 0.1em;
-  font-family: 'neue_machina';
+  font-family: 'neue_machinalight';
+  position: relative;
 }
 
 .skillsContainer div {
   margin: 0.8em 0;
   text-align: center;
   white-space: nowrap;
+}
+
+.linkedin_link {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 .tools {
