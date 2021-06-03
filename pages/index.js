@@ -62,7 +62,7 @@ function Home({router}) {
               <div className={styles.social_links}>
                 <a target="_blank" href="http://instagram.com/karimsaleh">Insta</a><br />
                 <a target="_blank" href="https://open.spotify.com/user/karimsaleh888888?si=ccd71f9edfe14315">Spotify</a><br />
-                <a href="#">LinkdedIn</a>
+                <a href="#">LinkedIn</a>
               </div>
             </div>
           </main>
@@ -73,53 +73,48 @@ function Home({router}) {
           </Link>
         </div>
       </section>
-      <Element name="body">
-        <section className={styles.section}>
-          <div className={styles.container}>
-              <h2>About Karim</h2>          
-            <div className={styles.cardLeft}>
-              <Image src='/images/image-design.png' width="662px" height="417px" />
-              <div className={styles.cardCopy}>
-                <div className={styles.cardTitles}>
-                  <h1 className={styles.cardTitle}>
-                    Design
-                  </h1>
-                  <h3 className={styles.cardTitleSubText}>
-                    I don't believe<br/>in bandaids
-                  </h3>
-                </div>
-                <p>
-                  My community knows me as someone who will ask the right questions. I design because I believe all things are capable of growth if you nurture the root of the issue, instead of avoiding it.  
-                </p>
-              </div>
-            </div>
-            <div className={styles.cardRight}>
-              <Image src='/images/image-values.png' width="662px" height="417px" />
-              <div className={styles.cardCopy}>
-                <div className={styles.cardTitles}>
-                  <h1 className={styles.cardTitle}>
-                    Values
-                  </h1>
-                  <h3 className={styles.cardTitleSubText}>
-                    Social<br/>Currency
-                  </h3>
-                </div>
-                  <p>
-                    My eneagram says I’m a challenger type. I raise myself and my community through: 
-                  </p>
-                  <ul>
-                    <li>Strong Commmunication</li> 
-                    <li>Transparency </li> 
-                    <li>Vulberabilty</li> 
-                    <li>Support</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Element>
+      <Element name="body" />
       <section className={styles.section}>
         <div className={styles.container}>
+            <h2>About Karim</h2>          
+          <div className={styles.cardLeft}>
+            <Image src='/images/image-design.png' width="662px" height="417px" />
+            <div className={styles.cardCopy}>
+              <div className={styles.cardTitles}>
+                <h1 className={styles.cardTitle}>
+                  Design
+                </h1>
+                <h3 className={styles.cardTitleSubText}>
+                  I don't believe<br/>in bandaids
+                </h3>
+              </div>
+              <p>
+                My community knows me as someone who will ask the right questions. I design because I believe all things are capable of growth if you nurture the root of the issue, instead of avoiding it.  
+              </p>
+            </div>
+          </div>
+          <div className={styles.cardRight}>
+            <Image src='/images/image-values.png' width="662px" height="417px" />
+            <div className={styles.cardCopy}>
+              <div className={styles.cardTitles}>
+                <h1 className={styles.cardTitle}>
+                  Values
+                </h1>
+                <h3 className={styles.cardTitleSubText}>
+                  Social<br/>Currency
+                </h3>
+              </div>
+                <p>
+                  My eneagram says I’m a challenger type. I raise myself and my community through: 
+                </p>
+                <ul>
+                  <li>Strong Commmunication</li> 
+                  <li>Transparency </li> 
+                  <li>Vulberabilty</li> 
+                  <li>Support</li>
+                </ul>
+            </div>
+          </div>
           <div className={styles.cardLeft}>
             <Image src='/images/image-music.png' width="662px" height="417px" />
             <div className={styles.cardCopy}>
@@ -141,25 +136,25 @@ function Home({router}) {
             </div>
           </div>
           <div className={styles.cardRight}>
-              <Image src='/images/image-antics.png' width="662px" height="417px" />
-              <div className={styles.cardCopy}>
-                <div className={styles.cardTitles}>
-                  <h1 className={styles.cardTitle}>
-                    Antics
-                  </h1>
-                  <h3 className={styles.cardTitleSubText}>
-                    I climb<br/>things
-                  </h3>
-                </div>
-                  <p>
-                    I wish showering in mud was more socially acceptable. Rock climbing has taught me that in order to move on, you need to let go.
-                    My life goal is to conquer the biggest mountains and jump off all the waterfalls.
-                  </p>
-                  <p>
-                    And when I’m not scaring my mom half to death, you can find me behind the camera or around the campfire with a guitar.
-                  </p>
+            <Image src='/images/image-antics.png' width="662px" height="417px" />
+            <div className={styles.cardCopy}>
+              <div className={styles.cardTitles}>
+                <h1 className={styles.cardTitle}>
+                  Antics
+                </h1>
+                <h3 className={styles.cardTitleSubText}>
+                  I climb<br/>things
+                </h3>
               </div>
+                <p>
+                  I wish showering in mud was more socially acceptable. Rock climbing has taught me that in order to move on, you need to let go.
+                  My life goal is to conquer the biggest mountains and jump off all the waterfalls.
+                </p>
+                <p>
+                  And when I’m not scaring my mom half to death, you can find me behind the camera or around the campfire with a guitar.
+                </p>
             </div>
+          </div>
         </div>
         <div className={styles.container}>
           <h2>Skills</h2>
