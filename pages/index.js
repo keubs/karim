@@ -180,9 +180,6 @@ function Home({router}) {
               <div>Craigslist Haggling</div>
             </div>
           </div>
-          <div className={styles.linkedin_link}>
-            <a href="http://linkedin.com/karim">Complete list on <Image src="/images/linkedin.jpg" width="16px" height="14px" /></a>
-          </div>
         </div>
       </section>
       <section className={styles.section}>
