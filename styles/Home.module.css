@@ -344,6 +344,19 @@
   letter-spacing: 10px;
 }
 
+.contact .links {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .links li {
+  list-style: none;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
 .rewind {
   position: absolute;
   bottom: 0;

@@ -303,11 +303,14 @@ function Home({router}) {
           <div className={styles.contact}>
             <h3>I'M THE TYPE OF TEXTER WHO CALLS (but I send a mean email)</h3>
             <span className={styles.touch}>GET IN TOUCH</span>
-            <div>
-                <a target="_blank" href="http://instagram.com/karimsaleh">Insta</a><br />
-                <a target="_blank" href="https://open.spotify.com/user/karimsaleh888888?si=ccd71f9edfe14315">Spotify</a><br />
-                <a href="#">LinkdedIn</a>
-              </div>
+            <ul className={styles.links}>
+              <li>
+                <a href="#">LinkedIn</a>
+              </li>
+              <li>
+                <a target="_blank" href="#">Resume</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
