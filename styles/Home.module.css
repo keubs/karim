@@ -142,17 +142,32 @@
   left: 4%;
 }
 
-.cardLeft {
+.card {
+  max-width: 1219px;
   display: flex;
-  justify-content: space-around;
-  margin: 9em 3em 7em;
+  margin: 11.5em auto 8em;
 }
+
+/* .cardLeft {
+} */
 
 .cardRight {
   display: flex;
-  justify-content: space-around;
   flex-direction: row-reverse;
-  margin: 18em 3em 7em;
+  /* margin: 18em 3em 7em; */
+}
+
+.cardLeft img,
+.cardRight img {
+  border-radius: 20px;
+}
+
+.cardLeft .cardCopy {
+  margin-left: 1rem;
+}
+
+.cardRight .cardCopy {
+  margin-right: 4.6rem;
 }
 
 .cardCopy {
@@ -253,7 +268,7 @@
 .tools {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  padding: 5em 3em 0 3em;
+  padding: 5em 9em 0 3em;
 }
 
 .tools span {
@@ -268,22 +283,23 @@
 }
 
 .tool {
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   text-align: center;
 }
 
 .experiences {
-  padding: 3em;
+  padding: 8em 13em 8em 7em
 }
 
 .experience {
-  padding: 0em 3em;
   border-bottom: 1px solid;
 }
 
 .experience h1 {
-  flex-grow: 1;
-  margin-left: 8em;
+  margin-left: 7.1em;
+  line-height: 60px;
+  font-family: 'neue_machina';
+  font-size: 2.1em;
 }
 
 .experience h3 {
@@ -307,19 +323,25 @@
 
 .experience .icon {
   text-align: center;
-  min-width: 200px;
+  min-width: 150px;
   align-self: flex-end;
+  margin-right: -25px;
 }
 
 .contact {
-  padding: 4em 1em;
+  padding: 9em 0 0 7em;
   min-height: 5vh;
 }
 
+.contact h3 {
+  margin: .5em 0;
+}
+
 .contact .touch {
-  font-size: 8em;
+  font-size: 6.7em;
   font-family: 'monument_extendedregular';
   position: relative;
+  letter-spacing: 10px;
 }
 
 .rewind {

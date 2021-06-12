@@ -25,7 +25,7 @@ const Header = ({styles, currentPath}) => {
               : ''
             }
           >
-            <Link href={path.path}>
+            <Link href={`${path.path}?animate=true`}>
               {path.text}
             </Link>
           </li>

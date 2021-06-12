@@ -62,6 +62,22 @@ a {
 }
 
 @font-face {
+  font-family: 'monument_extendedbold';
+  src: url('fonts/monumentextended-bold.woff2') format('woff2'),
+       url('fonts/monumentextended-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monument_extendedblack';
+  src: url('fonts/monumentextended-black.woff2') format('woff2'),
+       url('fonts/monumentextended-black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'monument_extendedlight';
   src: url('fonts/monumentextended-light-webfont.woff2') format('woff2'),
        url('fonts/monumentextended-light-webfont.woff') format('woff');

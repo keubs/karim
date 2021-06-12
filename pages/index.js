@@ -79,8 +79,8 @@ function Home({router}) {
       <section className={styles.section}>
         <div className={styles.container}>
             <h2>About Karim</h2>          
-          <div className={styles.cardLeft}>
-            <Image src='/images/image-design.png' width="662px" height="417px" />
+          <div className={`${styles.card} ${styles.cardLeft}`}>
+            <Image src='/images/image-design.jpg' width="662px" height="417px" />
             <div className={styles.cardCopy}>
               <div className={styles.cardTitles}>
                 <h1 className={styles.cardTitle}>
@@ -95,8 +95,8 @@ function Home({router}) {
               </p>
             </div>
           </div>
-          <div className={styles.cardRight}>
-            <Image src='/images/image-values.png' width="662px" height="417px" />
+          <div className={`${styles.card} ${styles.cardRight}`}>
+            <Image src='/images/image-values.jpg' width="662px" height="417px" />
             <div className={styles.cardCopy}>
               <div className={styles.cardTitles}>
                 <h1 className={styles.cardTitle}>
@@ -117,8 +117,8 @@ function Home({router}) {
                 </ul>
             </div>
           </div>
-          <div className={styles.cardLeft}>
-            <Image src='/images/image-music.png' width="662px" height="417px" />
+          <div className={`${styles.card} ${styles.cardLeft}`}>
+            <Image src='/images/image-music.jpg' width="662px" height="417px" />
             <div className={styles.cardCopy}>
               <div className={styles.cardTitles}>
                 <h1 className={styles.cardTitle}>
@@ -137,8 +137,8 @@ function Home({router}) {
               </p>
             </div>
           </div>
-          <div className={styles.cardRight}>
-            <Image src='/images/image-antics.png' width="662px" height="417px" />
+          <div className={`${styles.card} ${styles.cardRight}`}>
+            <Image src='/images/image-antics.jpg' width="662px" height="417px" />
             <div className={styles.cardCopy}>
               <div className={styles.cardTitles}>
                 <h1 className={styles.cardTitle}>

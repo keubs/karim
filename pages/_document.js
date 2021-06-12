@@ -3,13 +3,15 @@ import { Component } from 'react';
 class HeadElement extends Component {
   componentDidMount() {
       const {bodyClass} = this.props
+      debugger;
       document.querySelector("body").classList.add(bodyClass || "light")
   }
 
   render() {
-      return <Head>
-          {/* Whatever other stuff you're using in Head */}
-      </Head>
+      return (
+        <Head>
+        </Head>
+      );
   }
 }
 
@@ -18,6 +20,7 @@ class MyDocument extends Document {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
   }
+  
 
   render() {
     return (
