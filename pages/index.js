@@ -59,7 +59,7 @@ function Home({router}) {
             </div>
             <div className={styles.get_in_touch}>
               <Link className="scrollLink" to="contact" smooth>
-                <h2>Get In Touch</h2>
+                <div className={styles.circle}>Get In Touch</div>
               </Link>
               <div className={styles.social_links}>
                 <a target="_blank" href="http://instagram.com/karimsaleh">Insta</a><br />
