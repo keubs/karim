@@ -59,7 +59,7 @@ function Home({router}) {
             </div>
             <div className={styles.get_in_touch}>
               <Link className="scrollLink" to="contact" smooth>
-                <div className={styles.circle}>Get In Touch</div>
+                <h2>Get In Touch</h2>
               </Link>
               <div className={styles.social_links}>
                 <a target="_blank" href="http://instagram.com/karimsaleh">Insta</a><br />
@@ -288,10 +288,15 @@ function Home({router}) {
                   <h1 className="title">Account Manager</h1>
                   <div className={styles.icon}>
                     <img src="/images/airbnb-icon.png" className="icon" />
-                    <span className={styles.companyName}>Airbnb</span>
+                    <span className={styles.companyName}>Airbnb @ sofar</span>
                   </div>
                 </div>
               </div>
+            </div>
+            <div className={styles.linkedin}>
+              <a href="https://www.linkedin.com/in/karimsaleh-design/" target="_blank">
+                Complete list on <img src="/images/linkedin.jpg" />
+              </a>
             </div>
           </div>
         </div>
@@ -315,6 +320,9 @@ function Home({router}) {
         </div>
       </section>
       <footer className={styles.footer}>
+        <div className={styles.photography}>
+          <img src="/images/white-camera.png" /> Photography
+        </div>
         <Link className="scrollLink" to="top" smooth>
           <img src="/images/rewind.png" className={styles.rewind} />
         </Link>
