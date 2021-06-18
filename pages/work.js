@@ -66,12 +66,29 @@ const Work = ({router}) => {
                 <h1
                   className={styles.title}
                 >
-                    Karim
+                  Karim
                 </h1>
-                <p>
-                  Currently at the intersection of music &amp; the economy.
-                  Exploring blockchain solutions in shared ownership as a tool to drive patron engagement.  
-                </p>
+                <div styles={{position: 'relative'}}>
+                  <p className={styles.homepage_copy}>
+                    Advocate for a shoeless world &ndash; I&apos;m an endless wonderer who derives joy from noticing the unseen.
+                  </p>
+                  <motion.p
+                    className={styles.work_page_copy}
+                    initial={{
+                      height: 0,
+                    }}
+                    animate={{
+                      height: 200
+                    }}
+                    transition={{
+                      duration: .5,
+                      delay: 1
+                    }}
+                  >
+                    Currently at the intersection of music &amp; the economy.
+                    Exploring blockchain solutions in shared ownership as a tool to drive patron engagement.  
+                  </motion.p>
+                </div>
               </motion.div>
             <div className={styles.get_in_touch}>
               <Link className="scrollLink" to="contact" smooth>

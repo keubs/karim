@@ -68,18 +68,26 @@
 
 .intro {
   color: #F3EFE8;
-  mix-blend-mode: difference;
   width: 587px;
   font-size: 1.275rem;
   margin-top: 10em;
   position: absolute;
   left: 0;
 }
+
+.intro p.work_page_copy {
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 150px;
+  overflow: hidden;
+}
+
 .intro_holder {
   width: 587px;
 }
 
 .title {
+  mix-blend-mode: difference;
   margin: 0;
   font-size: 6.75rem;
   font-family: 'monument_extendedregular';
